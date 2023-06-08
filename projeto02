@@ -1,0 +1,16 @@
+from tkinter import *
+def clique():
+    tex.configure(text= ' 1')
+
+ja = Tk()
+ja.title('minha janela')
+#ja.iconbitmap('')
+ja.geometry("400x200")
+ja.resizable(True, True)
+tex = Label(ja, text = "2")
+
+tex.pack()
+b = Button(ja,text = '3', command=clique )
+b.pack()
+
+ja.mainloop()

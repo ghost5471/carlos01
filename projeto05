@@ -1,0 +1,9 @@
+import requests
+
+re = requests.get('http://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL,BTC-BRL')
+
+re_a = re.json()
+cotaco_dolar = re_a['USDBRL']['bid']
+cotaco_euro = re_a['EURBRL']['bid']
+cotaco_btc = re_a['BTCBRL']['bid']
+print(cotaco_dolar)

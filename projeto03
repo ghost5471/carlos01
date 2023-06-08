@@ -1,0 +1,11 @@
+def k(nota):
+    return sum(nota) / len(nota)
+
+valor = []
+
+for uu in range(3):
+    vl = float(input(f'{uu+1}número'))
+    valor.append(vl)
+
+resu = k(valor)4
+print(resu)
